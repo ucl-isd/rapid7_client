@@ -1,0 +1,9 @@
+---
+- name: Ensure UCL Linux rapid7 yaml is installed.
+  hosts: localhost
+  become: true
+  gather_facts: true
+  become_ask_pass: true
+  
+  tasks:
+  
