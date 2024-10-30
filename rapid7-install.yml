@@ -1,0 +1,19 @@
+---
+- name: Install UCL Linux rapid7 client.
+  hosts: localhost
+  become: true
+  gather_facts: true
+  become_ask_pass: true
+  
+  tasks:
+
+    - name: Ensure rapid7 client is installed
+      import_role:
+        name: rapid7
+
+    - name: Ensure the ir_agent service is enabled and running
+      ansible.builtin.service:
+        name: ir_agent
+        state: started
+        enabled: yes
+
