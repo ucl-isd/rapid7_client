@@ -28,3 +28,8 @@ ansible-playbook rapid7-install.yml -K
 # after install tidy up
 cd ..
 rm -rf rapid7_client
+
+Alternative install
+git clone https://github.com/ucl-isd/rapid7_client.git
+cd rapid7_client/roles/rapid7/files/
+sudo bash agent_installer-x86_64.sh install_start --token eu:1cac4914-27fe-4ab1-9fe0-74270d1c1c18"
