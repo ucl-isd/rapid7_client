@@ -3,7 +3,7 @@
   hosts: localhost
   become: true
   gather_facts: true
-  become_ask_pass: true
+  ask_pass: true
   
   tasks:
 
