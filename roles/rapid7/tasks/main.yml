@@ -2,7 +2,7 @@
 # tasks file for rapid7
 
 - name: Run the install script for x86_64
-  ansible.builtin.command: "sudo bash files/agent_installer-x86_64.sh install_start --token eu:1cac4914-27fe-4ab1-9fe0-74270d1c1c18"
+  ansible.builtin.command: "sudo bash roles/rapid7files/agent_installer-x86_64.sh install_start --token eu:1cac4914-27fe-4ab1-9fe0-74270d1c1c18"
   args:
     creates: /opt/rapid7/ir_agent/ir_agent
   when: ansible_architecture == 'x86_64'
