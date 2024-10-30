@@ -25,7 +25,7 @@ git clone https://github.com/ucl-isd/rapid7_client.git
 cd rapid7_client
 #run the playbook, you logged on as an account with sudo access
 ansible-playbook rapid7-install.yml -K
-# after install tidy up
+#after install tidy up
 cd ..
 rm -rf rapid7_client
 
