@@ -6,7 +6,6 @@
   ask_pass: true
   
   tasks:
-
     - name: Ensure rapid7 client is installed
       import_role:
         name: rapid7
@@ -16,4 +15,3 @@
         name: ir_agent
         state: started
         enabled: yes
-
